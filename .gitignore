@@ -1,0 +1,48 @@
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+
+# ===== Visual Studio / IDE =====
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ===== Build results =====
+bin/
+obj/
+out/
+Debug/
+Release/
+x64/
+x86/
+AnyCPU/
+
+# ===== .NET Core =====
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ===== NuGet =====
+packages/
+*.nupkg
+*.snupkg
+.nuget/
+
+# ===== Logs =====
+*.log
+
+# ===== Environment files =====
+.env
+
+# ===== Temporary files =====
+*.tmp
+*.swp
+*.bak
+
+# ===== Rider =====
+.idea/
+*.sln.iml
