@@ -1,71 +1,97 @@
 using System;
 
-class TypeCasting
+class OperatorsDemo
 {
     static void Main()
     {
-        // -------------------------------
-        // DATA TYPES
-        // -------------------------------
-        int i = 10;
-        double d = 20.5;
-        float f = 15.5f;
-        long l = 100000;
-        decimal dec = 50.75m;
-        char ch = 'A';
-        bool flag = true;
-        string name = "Suru";
+        int a = 10;
+        int b = 3;
 
-        Console.WriteLine("Original Values:");
-        Console.WriteLine(i);
-        Console.WriteLine(d);
-        Console.WriteLine(f);
-        Console.WriteLine(l);
-        Console.WriteLine(dec);
-        Console.WriteLine(ch);
-        Console.WriteLine(flag);
-        Console.WriteLine(name);
+        // -----------------------------
+        // 1️⃣ Arithmetic Operators
+        // -----------------------------
+        Console.WriteLine("Arithmetic Operators:");
+        Console.WriteLine("Addition: " + (a + b));
+        Console.WriteLine("Subtraction: " + (a - b));
+        Console.WriteLine("Multiplication: " + (a * b));
+        Console.WriteLine("Division: " + (a / b));
+        Console.WriteLine("Modulus: " + (a % b));
 
-        // -------------------------------
-        // 1️⃣ IMPLICIT TYPE CASTING
-        // (Small → Big, automatic)
-        // -------------------------------
-        int a = 100;
-        double b = a;   // int → double
+        // -----------------------------
+        // 2️⃣ Assignment Operators
+        // -----------------------------
+        Console.WriteLine("\nAssignment Operators:");
+        int x = 5;
+        x += 2;   // x = x + 2
+        Console.WriteLine("x += 2 : " + x);
 
-        Console.WriteLine("\nImplicit Casting:");
-        Console.WriteLine(b);
+        x -= 1;   // x = x - 1
+        Console.WriteLine("x -= 1 : " + x);
 
-        // -------------------------------
-        // 2️⃣ EXPLICIT TYPE CASTING
-        // (Big → Small, manual)
-        // -------------------------------
-        double x = 99.99;
-        int y = (int)x;   // double → int
+        x *= 3;   // x = x * 3
+        Console.WriteLine("x *= 3 : " + x);
 
-        Console.WriteLine("\nExplicit Casting:");
-        Console.WriteLine(y);
+        x /= 2;   // x = x / 2
+        Console.WriteLine("x /= 2 : " + x);
 
-        // -------------------------------
-        // 3️⃣ TYPE CASTING USING CONVERT CLASS
-        // -------------------------------
-        string num = "50";
+        // -----------------------------
+        // 3️⃣ Relational Operators
+        // -----------------------------
+        Console.WriteLine("\nRelational Operators:");
+        Console.WriteLine("a == b : " + (a == b));
+        Console.WriteLine("a != b : " + (a != b));
+        Console.WriteLine("a > b  : " + (a > b));
+        Console.WriteLine("a < b  : " + (a < b));
+        Console.WriteLine("a >= b : " + (a >= b));
+        Console.WriteLine("a <= b : " + (a <= b));
 
-        int numInt = Convert.ToInt32(num);   // string → int
-        double numDouble = Convert.ToDouble(num); // string → double
+        // -----------------------------
+        // 4️⃣ Logical Operators
+        // -----------------------------
+        Console.WriteLine("\nLogical Operators:");
+        bool p = true;
+        bool q = false;
 
-        Console.WriteLine("\nConvert Class Casting:");
-        Console.WriteLine(numInt);
-        Console.WriteLine(numDouble);
+        Console.WriteLine("p && q : " + (p && q));
+        Console.WriteLine("p || q : " + (p || q));
+        Console.WriteLine("!p     : " + (!p));
 
-        // -------------------------------
-        // 4️⃣ TYPE CASTING USING Parse
-        // -------------------------------
-        string value = "25";
+        // -----------------------------
+        // 5️⃣ Unary Operators
+        // -----------------------------
+        Console.WriteLine("\nUnary Operators:");
+        int num = 5;
 
-        int parsedInt = int.Parse(value);
+        Console.WriteLine("++num : " + (++num)); // pre-increment
+        Console.WriteLine("num++ : " + (num++)); // post-increment
+        Console.WriteLine("--num : " + (--num)); // pre-decrement
 
-        Console.WriteLine("\nParse Casting:");
-        Console.WriteLine(parsedInt);
+        // -----------------------------
+        // 6️⃣ Ternary Operator
+        // -----------------------------
+        Console.WriteLine("\nTernary Operator:");
+        int max = (a > b) ? a : b;
+        Console.WriteLine("Maximum value: " + max);
+
+        // -----------------------------
+        // 7️⃣ Type Casting Operators
+        // -----------------------------
+        Console.WriteLine("\nType Casting:");
+        double d = 10.5;
+        int i = (int)d;   // explicit casting
+        Console.WriteLine("Double to Int: " + i);
+
+        // -----------------------------
+        // 8️⃣ typeof Operator
+        // -----------------------------
+        Console.WriteLine("\ntypeof Operator:");
+        Console.WriteLine(typeof(int));
+
+        // -----------------------------
+        // 9️⃣ is Operator
+        // -----------------------------
+        Console.WriteLine("\nis Operator:");
+        object obj = "Hello";
+        Console.WriteLine(obj is string);
     }
 }
