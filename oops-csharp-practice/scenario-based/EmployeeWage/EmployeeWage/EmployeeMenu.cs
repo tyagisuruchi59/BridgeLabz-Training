@@ -18,6 +18,7 @@ namespace EmployeeWage
             employeeUtility.CheckAttendance();
             employeeUtility.CalculateDailyWage();
             employeeUtility.CalculatePartTimeWage();
+            employeeUtility.CalculateWageUsingSwitch();
         }
     }
 }
