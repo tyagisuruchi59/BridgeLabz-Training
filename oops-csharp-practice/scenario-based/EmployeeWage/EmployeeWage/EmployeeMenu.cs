@@ -19,6 +19,8 @@ namespace EmployeeWage
             employeeUtility.CalculateDailyWage();
             employeeUtility.CalculatePartTimeWage();
             employeeUtility.CalculateWageUsingSwitch();
+            employeeUtility.CalculateMonthlyWage();     
+            employeeUtility.CalculateWageTillCondition(); 
         }
     }
 }

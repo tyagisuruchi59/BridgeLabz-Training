@@ -61,6 +61,31 @@ namespace EmployeeWage
                     Console.WriteLine("Employee is Absent");
                     break;
             }
+
+        }
+        public void CalculateMonthlyWage()
+        {
+            int wagePerHour = 20;
+            int workingDays = 20;
+            int fullDayHour = 8;
+
+            int monthlyWage = wagePerHour * fullDayHour * workingDays;
+            Console.WriteLine("Monthly Employee Wage: " + monthlyWage);
+        }
+        public void CalculateWageTillCondition()
+        {
+            int wagePerHour = 20;
+            int totalHours = 0;
+            int totalDays = 0;
+
+            while (totalHours < 100 && totalDays < 20)
+            {
+                totalDays++;
+                totalHours += 8;
+            }
+
+            int totalWage = totalHours * wagePerHour;
+            Console.WriteLine("Total Wage till condition reached: " + totalWage);
         }
 
     }
