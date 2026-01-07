@@ -10,6 +10,22 @@ namespace EmployeeWage
         public void CheckAttendance()
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program on Master Branch");
+            Random random = new Random();
+            int attendance = random.Next(0, 2);
+
+            if (attendance == 1)
+                Console.WriteLine("Employee is Present");
+            else
+                Console.WriteLine("Employee is Absent");
+        }
+        public void CalculateDailyWage()
+        {
+            int wagePerHour = 20;
+            int fullDayHour = 8;
+
+            int dailyWage = wagePerHour * fullDayHour;
+            Console.WriteLine("Daily Employee Wage: " + dailyWage);
         }
     }
-}
+       
+    }

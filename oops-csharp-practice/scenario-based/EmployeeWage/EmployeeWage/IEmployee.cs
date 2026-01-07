@@ -7,5 +7,7 @@ namespace EmployeeWage
     internal interface IEmployee
     {
         void CheckAttendance();
+        void CalculateDailyWage();
+
     }
 }
