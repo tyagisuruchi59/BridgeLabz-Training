@@ -26,6 +26,15 @@ namespace EmployeeWage
             int dailyWage = wagePerHour * fullDayHour;
             Console.WriteLine("Daily Employee Wage: " + dailyWage);
         }
+        public void CalculatePartTimeWage()
+        {
+            int wagePerHour = 20;
+            int partTimeHour = 4;
+            int partTimeWage = wagePerHour * partTimeHour;
+            Console.WriteLine("Part Time Employee Wage :" + partTimeWage);
+
+        }
+
     }
-       
-    }
+}
+
