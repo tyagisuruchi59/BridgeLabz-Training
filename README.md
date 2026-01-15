@@ -1085,5 +1085,135 @@
 - Successfully compiled and executed programs using the `csc` compiler.  
 
 
+# 📘 Daily Learning Log
 
+---
+
+## 📅 13 January 2026
+
+### 👨‍💻 Technology Focus
+- C#
+- Object-Oriented Programming (OOP)
+- Data Structures & Algorithms
+- Console Application Design
+- Best Practices in C#
+
+---
+
+### ✅ Tasks & Topics Covered
+
+#### 1️⃣ C# Best Practices
+
+##### 🔹 StringBuilder
+
+**Use Case**  
+Used when performing multiple string operations such as:
+- Concatenation
+- Insertion
+- Modification  
+(especially inside loops)
+
+**Why StringBuilder?**
+- `string` is immutable → creates new objects every time
+- `StringBuilder` is mutable → better memory usage & performance
+
+**Best Practices Followed**
+- Prefer `StringBuilder` over `string` in performance-critical scenarios
+- Use `Append()` instead of `+`
+- Initialize capacity when size is known
+
+---
+
+### 🧩 Scenario-Based Console Applications
+The following real-world, scenario-based console applications were implemented:
+
+- MovieScheduleSystem
+- BookBuddy
+
+**Key Focus Areas**
+- Object-oriented design
+- Console-based user interaction
+- Clean and maintainable code
+
+---
+
+---
+
+## 📅 14 January 2026
+
+### 📘 Day Task – AddressBookSystem (UC1 to UC11)
+
+### 🎯 Problem Overview
+The AddressBookSystem is a real-world, scenario-based, menu-driven console application that simulates how an address book works in daily life.
+
+The system allows users to manage personal contacts across multiple address books while ensuring:
+- Data integrity
+- Scalability
+- Proper Object-Oriented Programming principles
+
+The project was implemented step-by-step using Use Cases (UC1–UC11).
+
+---
+
+### 🧩 Real-World Scenario Explanation
+- Users can maintain multiple address books (e.g., Personal, Office)
+- Each address book contains multiple contacts
+- Each contact includes:
+  - Name
+  - Address
+  - City
+  - State
+  - Phone Number
+  - Email
+- The system prevents duplicate entries and supports:
+  - Searching
+  - Sorting
+  - Grouping
+
+---
+
+### ✅ Use Cases Implemented
+
+- **UC1 – Create Contact**  
+  Create a contact with complete personal details.
+
+- **UC2 – Add Contact to Address Book**  
+  Add a new contact using console input.
+
+- **UC3 – Edit Existing Contact**  
+  Edit contact details using the person’s first name.
+
+- **UC4 – Delete Contact**  
+  Delete a contact using the person’s name.
+
+- **UC5 – Add Multiple Contacts**  
+  Store multiple contacts using collections.
+
+- **UC6 – Multiple Address Books**  
+  Manage multiple address books using a Dictionary, each with a unique name.
+
+- **UC7 – Duplicate Entry Check**  
+  Prevent duplicate entries using person name.  
+  Equals() and GetHashCode() are overridden.
+
+- **UC8 – Search by City or State**  
+  Search contacts across address books based on city or state.
+
+- **UC9 – View Persons by City or State**  
+  Group and view contacts by city or state.
+
+- **UC10 – Count Contacts by City or State**  
+  Display total contacts per city or state.
+
+- **UC11 – Sort Contacts by Name**  
+  Sort contacts alphabetically by person name.
+
+---
+
+### ⭐ Key Learnings
+- Practical application of OOP principles
+- Effective use of collections (List, Dictionary)
+- Duplicate prevention using object comparison
+- Scalable menu-driven console application design
+- Clean coding and best practices in C#
 ---
