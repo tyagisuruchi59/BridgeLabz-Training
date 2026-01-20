@@ -1217,3 +1217,105 @@ The project was implemented step-by-step using Use Cases (UC1–UC11).
 - Scalable menu-driven console application design
 - Clean coding and best practices in C#
 ---
+
+# 📘 Daily Task Log – C#, OOPS & DSA Practice
+
+---
+
+## 📅 15 January 2026  
+### 📘 Day Task – OOPS, C# Core Concepts & Console Application Enhancements
+
+Today’s task focused on strengthening Object-Oriented Programming concepts, understanding core C# behavior, and improving console application design and structure.
+
+### ✅ What I Have Done
+
+- Practiced and revised core **OOPS concepts** including:
+  - Encapsulation
+  - Inheritance
+  - Polymorphism
+  - Abstraction
+- Understood and implemented **upcasting and downcasting** with practical examples.
+- Studied the difference between:
+  - Method overriding vs method hiding
+  - Abstract class vs interface
+- Analyzed **default access modifiers in C#** for:
+  - Classes
+  - Methods
+  - Variables
+- Converted existing console logic into a proper **OOPS-based project structure**.
+- Refactored code to follow **C# naming conventions and best practices**.
+- Designed **menu-driven console applications** with clean separation of concerns.
+- Improved code readability and maintainability by using **file-wise class separation**.
+
+---
+
+## 📅 16 January 2026  
+### 📘 Day Task – BookShelf Library Organizer  
+*(Custom Data Structures in C#)*
+
+Today’s task focused on implementing a real-world scenario-based library system using custom data structures without relying on the built-in collection framework.
+
+### ✅ What I Have Done
+
+- Designed and developed a **menu-driven C# console application** named **BookShelf – Library Organizer**.
+- Implemented a **genre-wise book management system**.
+- Created a **custom dictionary using nested arrays** to map genres to books.
+- Built a **custom singly linked list** to store and manage books efficiently.
+- Implemented core features:
+  - Add book
+  - Remove book
+  - Display library catalog
+- Added **duplicate book validation logic** without using `HashSet`.
+- Structured the project in a **clean, file-wise manner**.
+- Applied **core OOPS principles** throughout the application design.
+- Generated **sample input–output flows and documentation**.
+- Created `README.md` and **daily task documentation** for the project.
+
+---
+
+## 📅 17 January 2026  
+### 📘 Day Task – FlashSalesApp  
+*(Product Sorting by Discount using Quick Sort)*
+
+Today’s task focused on implementing a real-world e-commerce flash sale scenario using **DSA and OOPS concepts in C#**, with emphasis on efficient sorting of large, unsorted data.
+
+### ✅ What I Have Done
+
+- Designed and developed a **menu-driven C# console application** named **FlashSalesApp**.
+- Implemented a **product discount–based sorting system** for flash sale scenarios.
+- Used **Quick Sort algorithm** to efficiently sort products by **highest discount first**.
+- Built a **custom array-based product storage system** without using the collection framework.
+- Created a **user-driven input mechanism** to avoid hard-coded values.
+- Implemented core features:
+  - Add product details dynamically
+  - Sort products by discount
+  - Display sorted product list
+- Applied **interface-based abstraction** to decouple sorting logic.
+- Encapsulated product data using **private setters and controlled access**.
+- Structured the application using **clear file-wise separation of responsibilities**.
+- Followed proper **C# naming conventions and coding standards**.
+- Ensured the design supports **scalability and maintainability**.
+- Generated **sample execution flows and documentation**.
+- Created `README.md` and **daily task documentation** for the application.
+
+---
+
+## 📅 19 January 2026  
+### 📘 Day Task – DSA Scenario-Based Console Applications  
+*(Linked List, Stack & HashMap)*
+
+Today’s task focused on implementing **real-world scenario-based problems** using core **Data Structures and Algorithms (DSA)** in C#, along with proper problem modeling and functional design.
+
+---
+
+### 🎯 Problem Scenarios Covered
+
+---
+
+### 1️⃣ ParcelTracker – Delivery Chain Management  
+**(Singly Linked List)**
+
+#### 🧩 Scenario Explanation
+
+In a courier company, each parcel goes through a sequence of delivery stages such as:
+
