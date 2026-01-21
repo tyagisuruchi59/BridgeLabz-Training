@@ -1,18 +1,34 @@
-using System;
-using System.Collections.Generic;
-
-namespace Systems
+class Node
 {
-    public class VotingSystem
-    {
-        public static void Run()
-        {
-            Dictionary<string, int> votes = new();
-            votes["Alice"] = 3;
-            votes["Bob"] = 1;
+    public int data;
+    public Node next;
 
-            foreach (var v in votes)
-                Console.WriteLine($"{v.Key}: {v.Value}");
+    public Node(int data)
+    {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+class LinkedList
+{
+    Node head;
+
+    public void Add(int data)
+    {
+        Node newNode = new Node(data);
+
+        if (head == null)
+        {
+            head = newNode;
+            return;
         }
+
+        Node current = head;
+        while (current.next != null)
+        {
+            current = current.next;
+        }
+        current.next = newNode;
     }
 }

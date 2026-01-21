@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Collections.Generic;
 
 namespace Sets
@@ -61,5 +61,33 @@ namespace Sets
 
             Console.WriteLine("Is Subset: " + a.IsSubsetOf(b));
         }
+    }
+}
+/*
+class Node
+{
+    public int data;
+    public Node next;
+
+    public Node(int data)
+    {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+public class MiddleOfLinkedList
+{
+    static Node findMiddle(Node head)
+    {
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null)
+        {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
     }
 }
