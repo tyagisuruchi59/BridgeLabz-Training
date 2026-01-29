@@ -1,0 +1,24 @@
+using System;
+using System.IO;
+
+class SearchEmployee
+{
+    static void Main()
+    {
+        string searchName = "Alice";
+
+        using StreamReader reader = new StreamReader("employees.csv");
+        reader.ReadLine();
+
+        while (!reader.EndOfStream)
+        {
+            string[] data = reader.ReadLine().Split(',');
+
+            if (data[1].Equals(searchName, StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine($"Department: {data[2]}, Salary: {data[3]}");
+                break;
+            }
+        }
+    }
+}

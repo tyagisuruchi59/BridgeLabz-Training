@@ -1,0 +1,12 @@
+int count = 0;
+
+using var reader = new StreamReader("students.csv");
+reader.ReadLine(); // header
+
+while (!reader.EndOfStream)
+{
+    reader.ReadLine();
+    count++;
+}
+
+Console.WriteLine($"Total Records: {count}");
