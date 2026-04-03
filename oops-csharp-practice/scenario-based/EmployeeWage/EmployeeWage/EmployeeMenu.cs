@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace EmployeeWage
+{
+    sealed class EmployeeMenu
+    {
+        private IEmployee employeeUtility;
+
+        public EmployeeMenu()
+        {
+            employeeUtility = new EmployeeUtilityImpl();
+        }
+
+        public void Start()
+        {
+            employeeUtility.CheckAttendance();
+            employeeUtility.CalculateDailyWage();
+            employeeUtility.CalculatePartTimeWage();
+            employeeUtility.CalculateWageUsingSwitch();
+            employeeUtility.CalculateMonthlyWage();     
+            employeeUtility.CalculateWageTillCondition(); 
+        }
+    }
+}
