@@ -1,0 +1,17 @@
+using System;
+using System.IO;
+
+class ReadStudents
+{
+    static void Main()
+    {
+        using var reader = new StreamReader("students.csv");
+        reader.ReadLine(); // skip header
+
+        while (!reader.EndOfStream)
+        {
+            var cols = reader.ReadLine().Split(',');
+            Console.WriteLine($"ID: {cols[0]}, Name: {cols[1]}, Age: {cols[2]}, Marks: {cols[3]}");
+        }
+    }
+}

@@ -1,0 +1,36 @@
+using System;
+using System.IO;
+using System.Collections.Generic;
+
+class Student
+{
+    public int ID;
+    public string Name;
+    public int Age;
+    public int Marks;
+}
+
+class CSVToObjects
+{
+    static void Main()
+    {
+        var students = new List<Student>();
+
+        using StreamReader reader = new StreamReader("students.csv");
+        reader.ReadLine();
+
+        while (!reader.EndOfStream)
+        {
+            var d = reader.ReadLine().Split(',');
+            students.Add(new Student
+            {
+                ID = int.Parse(d[0]),
+                Name = d[1],
+                Age = int.Parse(d[2]),
+                Marks = int.Parse(d[3])
+            });
+        }
+
+        students.ForEach(s => Console.WriteLine($"{s.Name} - {s.Marks}"));
+    }
+}

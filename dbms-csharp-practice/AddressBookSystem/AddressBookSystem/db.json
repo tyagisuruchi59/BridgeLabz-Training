@@ -1,0 +1,48 @@
+{
+  "contacts": [
+    {
+      "id": "ddd9",
+      "FirstName": "divya",
+      "LastName": "yadav",
+      "Address": "etah",
+      "City": "etah",
+      "State": "up",
+      "Zip": "20220",
+      "PhoneNumber": "2323232323",
+      "Email": "dnefjbd@gmail.com"
+    },
+    {
+      "id": "d28e",
+      "FirstName": "nikhil",
+      "LastName": "kumar",
+      "Address": "agra",
+      "City": "etah",
+      "State": "up",
+      "Zip": "2343",
+      "PhoneNumber": "4454454545",
+      "Email": "fcjjbf@gmail.com"
+    },
+    {
+      "id": "c112",
+      "FirstName": "neha",
+      "LastName": "yadav",
+      "Address": "up",
+      "City": "up",
+      "State": "up",
+      "Zip": "3434",
+      "PhoneNumber": "2434443443",
+      "Email": "vfvfd@gmail.com"
+    },
+    {
+      "id": "ac9a",
+      "FirstName": "suruchi",
+      "LastName": "tyagi",
+      "Address": "agra",
+      "City": "agra",
+      "State": "up",
+      "Zip": "4355",
+      "PhoneNumber": "4545454545",
+      "Email": "fbrfhh@gmail.com"
+    }
+  ]
+}

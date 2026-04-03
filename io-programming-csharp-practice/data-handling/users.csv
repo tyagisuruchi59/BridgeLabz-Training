@@ -1,0 +1,25 @@
+using System;
+using System.IO;
+using System.Text.RegularExpressions;
+
+class ValidateCSV
+{
+    static void Main()
+    {
+        Regex emailRegex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+        Regex phoneRegex = new Regex(@"^\d{10}$");
+
+        using StreamReader reader = new StreamReader("users.csv");
+        reader.ReadLine();
+
+        while (!reader.EndOfStream)
+        {
+            string[] data = reader.ReadLine().Split(',');
+
+            if (!emailRegex.IsMatch(data[2]) || !phoneRegex.IsMatch(data[3]))
+            {
+                Console.WriteLine($"Invalid Row: {string.Join(",", data)}");
+            }
+        }
+    }
+}

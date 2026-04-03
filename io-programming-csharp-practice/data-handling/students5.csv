@@ -1,0 +1,34 @@
+using System;
+using System.IO;
+using System.Collections.Generic;
+
+class MergeCSV
+{
+    static void Main()
+    {
+        var map = new Dictionary<string, string[]>();
+
+        using (StreamReader r1 = new StreamReader("students1.csv"))
+        {
+            r1.ReadLine();
+            while (!r1.EndOfStream)
+            {
+                var d = r1.ReadLine().Split(',');
+                map[d[0]] = d;
+            }
+        }
+
+        using StreamReader r2 = new StreamReader("students2.csv");
+        using StreamWriter w = new StreamWriter("merged_students.csv");
+
+        w.WriteLine("ID,Name,Age,Marks,Grade");
+        r2.ReadLine();
+
+        while (!r2.EndOfStream)
+        {
+            var d2 = r2.ReadLine().Split(',');
+            if (map.ContainsKey(d2[0]))
+                w.WriteLine(string.Join(",", map[d2[0]]) + "," + d2[1] + "," + d2[2]);
+        }
+    }
+}
